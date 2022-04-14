@@ -19,5 +19,5 @@ Nome | GitHub | Linkedin | Email
 Adrizia Paixão | [Adrizia Paixão](https://github.com/Drycca-paixao) | [Linkedin](https://www.linkedin.com/in/adrizia-paixao/) | dryccapaixao@hotmail.com |
 Cecilia Costa | [Cecilia Costa](https://github.com/) | [Linkedin](https://www.linkedin.com/in) | @mail.com 
 Jessica Ricão | [Jessica Ricão](https://github.com/jricao) | [Linkedin](https://www.linkedin.com/in/jessicaricao) | jricao@hotmail.com 
-Mayra Alfonso | [Mayra Alfonso](https://github.com/mayraalfonso) | [Linkedin](https://www.linkedin.com/in/mayra-alfonso/) | mayraalfonso@mail.com 
-Naira Nascimento | [Naira Nascimento](https://github.com/nairasn) | [Linkedin](https://www.linkedin.com/in/naira-nascimento-4852b5a8/) | nascimentosnaira@mail.com |
+Mayra Alfonso | [Mayra Alfonso](https://github.com/mayraalfonso) | [Linkedin](https://www.linkedin.com/in/mayra-alfonso/) | mayraalfonso@gmail.com 
+Naira Nascimento | [Naira Nascimento](https://github.com/nairasn) | [Linkedin](https://www.linkedin.com/in/naira-nascimento-4852b5a8/) | nascimentosnaira@gmail.com |
