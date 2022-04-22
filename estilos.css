@@ -6,14 +6,13 @@
 
 .contenedor {
 	background:#FFFFFF;
-	width:100%;
-	max-width:1000px;
-	margin:auto; 
-
+	width: 90vw;
+	margin:auto;
 
 	/* Flexbox */
 	display:flex;
 	flex-flow:row wrap;
+	
 }
 
 body {
@@ -21,7 +20,7 @@ body {
 }
 header {
 	background:#D484AB;
-	width:100%;
+	width: 90vw;
 	height:150px;
 	padding:5px;
 
@@ -33,17 +32,19 @@ header {
 	flex-wrap:wrap;
 }
 .menuprincipal {
-	width: 980px;
+	width: 90vw;
     height: 50px;
 	font-size:35px;
 	list-style-type: none;
 	font-family:'Italianno', cursive;
 	background-color: #E5E5E5;
+	flex-wrap:wrap;
 
 	/*FLEXBOX*/
 
 	display: flex;
 	justify-content:center;
+	z-index: 1;
 	}
 
 .menuprincipal a {
@@ -53,6 +54,7 @@ header {
 	color: #67250A;
 	float: center;
   }
+
 .menuprincipal a:hover {
 	text-align: Center;
 	background-color: #F7BFD8;
@@ -98,7 +100,7 @@ header {
 	background-color: #D484AB;
 	position: Center;
 	bottom: 0;
-	width: 1000px;
+	width: 90vw;
 	height: 50px;
 
 	/*FLEXBOX*/
@@ -165,7 +167,7 @@ header {
 #slideentrada > ul.slider{
 	position: relative;
 	max-width: 980px;
-	width: 100%;
+	width: 90vw;
 	height: 500px;
   }
   
@@ -239,19 +241,20 @@ header {
 
   #sobremim h2 {
 	  display: flex;
-      align-items:center;
-	  margin-top: 25px;
+	  align-items: center;
+	  margin-top: px;
   }
 
-#sobremim h2 img{
+ #sobremim h2 img {
 	margin: 5px;
 	width: 50px;
 	height: 45px;
 }
 
+
 #main-cardapio{
 	display: flex;
-	align-content:center;
+	align-content: center;
 	margin-left: 30px;
 	margin-block-end: 30px;
 }
@@ -347,7 +350,7 @@ color: #E5E5E5;
 }
  #contato h1{
 	margin-left:250px;
-	font-size: 15px;
+	font-size: 25px;
 	font-family: 'Actor', sans-serif;
 	text-align: center;
 }
