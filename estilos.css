@@ -220,6 +220,7 @@ header {
   }
   
   #slideentrada > .menuslider li a{
+	position:relative;
 	display: inline-block;
 	color: white;
 	text-decoration: none;
@@ -229,7 +230,9 @@ header {
 	height: 20px;
 	font-size: 10px;
 	border-radius: 100%;
-  }
+	text-align: center;
+	left:110px
+	}
 
   #sobremim{
 	  margin-top: 50px;
@@ -254,7 +257,7 @@ header {
 
 #main-cardapio{
 	display: flex;
-	align-content: center;
+	align-items: center;
 	margin-left: 30px;
 	margin-block-end: 30px;
 }
@@ -274,22 +277,21 @@ header {
 }
 
 .bolos img {
-  margin: 25px;	
+  margin: 60px;	
   width: 250px;
   height: 250px;
 }
 .bolos p{
 position:absolute;
 background-color: #46363e;
-top: 456px;
-margin-left: 25px;
+top: 490px;
+margin-left: 60px;
 width: 250px;
-line-height: 30px;
-height: 30px;
-text-align: center;
+line-height: 40px;
+height: 40px;
+text-align:center;
 font-family: 'Actor', sans-serif;
 color: #E5E5E5;
-
 }
 
 .ovosdepascoa{
@@ -299,7 +301,7 @@ color: #E5E5E5;
 }
 
 .ovosdepascoa img{
-  margin:25px;
+  margin:60px;
   width: 250px;
   height: 250px;
 }
@@ -307,11 +309,11 @@ color: #E5E5E5;
 .ovosdepascoa p{
 	position:absolute;
 	background-color: #46363e;
-	top: 456px;
+	top: 490px;
 	width: 250px;
-	margin-left: 25px;
-	line-height: 30px;
-	height: 30px;
+	margin-left: 60px;
+	line-height: 40px;
+	height: 40px;
 	text-align: center;
 	font-family: 'Actor', sans-serif;
 	color: #E5E5E5;
@@ -324,7 +326,7 @@ color: #E5E5E5;
 }
 
 .diversos img{
-	margin:25px;
+	margin:60px;
 	width: 250px;
 	height: 250px;
   }
@@ -332,11 +334,11 @@ color: #E5E5E5;
   .diversos p{
 	  position:absolute;
 	  background-color: #46363e;
-	  top: 456px;
+	  top: 490px;
 	  width: 250px;
-	  margin-left: 25px;
-	  line-height: 30px;
-	  height: 30px;
+	  margin-left: 60px;
+	  line-height: 40px;
+	  height: 40px;
 	  text-align: center;
 	  font-family: 'Actor', sans-serif;
 	  color: #E5E5E5;
