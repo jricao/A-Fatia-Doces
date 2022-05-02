@@ -1,6 +1,6 @@
 ## Apresentação
 
-Projeto social apresentado ao Programa Da WoMakers Code, bootcamp Construdelas, patrocinado pela empresa Juntos Somos +
+Projeto social apresentado ao Programa Da WoMakersCode, bootcamp Construdelas, patrocinado pela empresa Juntos Somos +
 
 # Nome: A Fatia Doces
 
@@ -9,8 +9,10 @@ Projeto social apresentado ao Programa Da WoMakers Code, bootcamp Construdelas, 
 ## Front-end
 HTML
 CSS
+Bootstrap
 JavaScript
 
+# Link: https://afatiadoces.netlify.app/index.html
 
 # Autoras
 
