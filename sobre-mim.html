@@ -5,23 +5,18 @@
     <meta name="authors" content="Adrizia Paixão, Jessica Ricão, Mayra Alfonso, Naira Nascimento">
     <meta name="description" content="catálogo com fotos de doces, chocolates e sobremesas da marca Fatia Doces">
     <meta name="keywords" content="doce, sobremesa, chocolate, ovo de páscoa, bolo, Praia Grande/SP">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Bootstrap CSS -->
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>A Fatia Doces - By Rayssa</title>
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
-
-    <link rel="shortcut icon" href="imagens/logo-icon.jpeg">
+    <link rel="shortcut icon" href="images/logo-icon.jpeg">
 
     <link rel="stylesheet" href="estilos.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script src="prefixfree.min.js" type="text/javascript"></script>
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
     
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
@@ -32,43 +27,47 @@
     <div class="contenedor">
        <header>
         <div class="logo">
-            <img src="imagens/logotipo.jpg" width="150" alt="">
+            <img src="images/logotipo.jpg" width="150" alt="">
         </div>
         <div class="slogan">
             <P>Não há nada que eu não possa fazer</p>
         </div>
-        <div>
-           <ul class="social">
-             <li><img src="imagens/instagram-logo.png" width="22px" alt=""><a href="https://www.instagram.com/afatia.doces/">@Afatia.doces</a></li>
-             <li><img src="imagens/email-icon-orange.png" width="22px" alt="" class="email"><a href="mailto:rayssa_odzioba@hotmail.com">rayssa_odzioba@hotmail.com</a></li>
-             <li><img src="imagens/whatsapp.png" width="22px" alt="" class="what"><a href="https://wa.me/5513988054175">Fale Comigo</a></li>
+        <div class="social">
+         <nav>
+           <ul>
+             <li><img src="images/instagram-logo.png" width="22px" alt=""><a href="https://www.instagram.com/afatia.doces/">@Afatia.doces</a></li>
+             <li><img src="images/email-icon-orange.png" width="22px" alt="" class="email"><a href="mailto:rayssa_odzioba@hotmail.com">rayssa_odzioba@hotmail.com</a></li>
+             <li><img src="images/whatsapp.png" width="22px" alt="" class="what"><a href="https://wa.me/5513988054175">Fale Comigo</a></li>
             </ul>
+         </nav>
     </div>
-    <div class="menuprincipal">
+    <div class="menu-top">
         <nav>
-                <a href="index.html">Home</a>
-				<a href="sobre-mim.html">Sobre Mim</a>
-				<a href="cardapio.html">Cardápio</a>
-				<a href="contato.html">Contato</a>
+                <ul class="menu">
+                <button class="btn-buttom" onclick="action()"><img src="/images/menu.png"></button>
+                <li><a href="index.html" class="nav-enlace desaparece">Home</a></li>
+				<li><a href="sobre-mim.html" class="nav-enlace desaparece">Sobre Mim</a></li>
+				<li><a href="cardapio.html" class="nav-enlace desaparece">Cardápio</a></li>
+				<li><a href="contato.html" class="nav-enlace desaparece">Contato</a></li>
+             </ul>
         </nav>
     </div>
-	</header>
+</header>
     <section id="main-sobremim">
         <div id="sobremim">
             <h1 id="apresentacao">Sobre Mim</h1>
-            <br>
             <p>Formada em engenharia civil comecei na área dos doces como fonte de renda extra, descobrindo ali
                 uma nova paixão. Profissionalismo é a chave para iniciar os primeiros passos como profissional
                 liberal e dedicação com que os doces são feitos, hoje o meu maior desfio é inovação por isso levo
                 comigo o lema “não há nada que eu não possa fazer” me jogando de cabeça em cada encomenda e
                 trabalhando com muito amor.</p>
-           <h2><img src="imagens/mision.jpg" alt="Logo Missão" width="50" height="50" class="logomissao">Missão</h2>
+           <h2><img src="images/mision.jpg" alt="Logo Missão" width="50" height="50" class="logomissao">Missão</h2>
             <p> Proporcionar momentos nos quais os clientes possam apreciar um produto de qualidade, feito de
                 acordo com o seu gosto, preponderar pela excelência das matérias primas.</p>
-            <h2><img src="imagens/vision.jpg" alt="Logo Visão" width="50" height="50" id="logovisao"> Visão</h2>
+            <h2><img src="images/vision.jpg" alt="Logo Visão" width="50" height="50" id="logovisao"> Visão</h2>
             <p> Ser referência de qualidade dos produtos, profissionalismo, reconhecimento em todos os projetos
                 executados, o sucesso é ter a certeza de que contribui para o êxito dos produtos.</p>
-            <h2><img src="imagens/valores.jpg" alt="Logo Valores" width="50" height="50" id="logovalores">Valores</h2>
+            <h2><img src="images/valores.jpg" alt="Logo Valores" width="50" height="50" id="logovalores">Valores</h2>
             <p>Respeito aos clientes, parceiros e concorrentes; Responsabilidade social; Cuidado com todas as etapas de preparação, higiene, organização e planejamento.</p>
             <br></br>
         </div>
@@ -81,9 +80,16 @@
 				<a href="cardapio.html">Cardápio</a>
 				<a href="contato.html">Contato</a>
         </nav>
-        <div>
-           <p class="all"> All right reserved by A Fatia Doce © 2022 </p>
-        </div>
-        </div>
-    </footer>
     </div>
+    <div><p class="all"> All right reserved by A Fatia Doce © 2022 </p></div>
+</footer>
+</div>
+<script>function action(){
+console.log('esta funcionando mi boton');
+var ancla = document.getElementsByClassName('nav-enlace');
+for(var i = 0; i < ancla.length; i++){
+    ancla[i].classList.toggle('desaparece');
+}
+}
+</script>
+</body>

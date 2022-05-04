@@ -12,7 +12,6 @@
 	/* Flexbox */
 	display:flex;
 	flex-flow:row wrap;
-	
 }
 
 body {
@@ -20,9 +19,10 @@ body {
 }
 header {
 	background:#D484AB;
-	width: 90vw;
+	width:100%;
 	height:150px;
-	padding:5px;
+	padding: 5px;
+	margin-bottom: 5%;
 
 	/* Flexbox */
 	display: flex;
@@ -31,35 +31,37 @@ header {
 	flex-direction:row;
 	flex-wrap:wrap;
 }
-.menuprincipal {
-	width: 90vw;
-    height: 50px;
-	font-size:35px;
+.menu-top{
+	height: 10px;
+	margin-left: 10px;
+}
+.menu {
+	width: 88vw;
+	font-size:33px;
 	list-style-type: none;
 	font-family:'Italianno', cursive;
 	background-color: #E5E5E5;
-	flex-wrap:wrap;
-
-	/*FLEXBOX*/
-
-	display: flex;
-	justify-content:center;
 	z-index: 1;
-	}
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+}
 
-.menuprincipal a {
-	text-align: Center;
-	margin: 50px;
+.menu li {
+	flex: auto;
+}
+
+.menu a {
 	text-decoration: none;
 	color: #67250A;
-	float: center;
+	text-align: center;
+	line-height: 50px;
+	display: block;
   }
-
-.menuprincipal a:hover {
-	text-align: Center;
+.menu a:hover {
 	background-color: #F7BFD8;
-	float: center;
 }
+
 .social {
 	font-size:15px;
 	text-align: left;
@@ -94,19 +96,26 @@ header {
 	line-height:50px;
     font-family: 'Italianno', cursive;
 	font-size: 45px;
-  }
-   
+
+	/*FLEXBOX*/
+
+	display: flex;
+	justify-content:center;
+}
+
   footer {
 	background-color: #D484AB;
 	position: Center;
 	bottom: 0;
-	width: 90vw;
+	width: 89.5vw;
 	height: 50px;
 
 	/*FLEXBOX*/
 
 	display: flex;
 	justify-content:center;
+	flex-direction: column;
+	align-items: center;
   }
 .rodape{
 	margin:5px;
@@ -140,8 +149,7 @@ header {
 #main{
 	display: flex;
 	align-items: center;
-	margin-top: 20px;
-	max-width: 980px;
+	margin-top: 2px;
 	width: 100%;
 	height: 580px;
 }
@@ -153,10 +161,16 @@ header {
 	max-width: 980px;
 	width: 900%;
 	padding: 0px;
-	height: 500px;
+	height: 580px;
 	box-sizing: border-box;
 
-	}
+	/*FLEXBOX*/
+
+	display: flex;
+	justify-content:center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
 #slideentrada > ul, li {
     padding-top: 0px;
@@ -167,14 +181,14 @@ header {
 #slideentrada > ul.slider{
 	position: relative;
 	max-width: 980px;
-	width: 90vw;
+	width: 100%;
 	height: 500px;
   }
   
   #slideentrada > ul.slider h1{
 	position:absolute;
 	background-color: rgba(255, 255, 255, 0.6);
-	width: 980px;
+	width: 89.5vw;
 	padding: 10px;
 	left: 50%;
 	top: 300px;
@@ -212,6 +226,11 @@ header {
   #slideentrada > .menuslider {
 	text-align: center;
 	margin: 5px;
+
+	/*FLEXBOX*/
+
+	display: flex;
+	
   }
   
   #slideentrada > .menuslider li{
@@ -244,20 +263,19 @@ header {
 
   #sobremim h2 {
 	  display: flex;
-	  align-items: center;
-	  margin-top: px;
+      align-items:center;
+	  margin-top: 25px;
   }
 
- #sobremim h2 img {
+#sobremim h2 img{
 	margin: 5px;
 	width: 50px;
 	height: 45px;
 }
 
-
 #main-cardapio{
 	display: flex;
-	align-items: center;
+
 	margin-left: 30px;
 	margin-block-end: 30px;
 }
@@ -352,7 +370,118 @@ color: #E5E5E5;
 }
  #contato h1{
 	margin-left:250px;
-	font-size: 25px;
+	font-size: 15px;
 	font-family: 'Actor', sans-serif;
 	text-align: center;
 }
+
+.btn-buttom {
+	background-color: #D484AB;
+    width: 50px;
+	height: 50px;
+	margin-top: -62px;
+	display: none;
+	flex-direction: column;
+	align-self: flex-end;
+}
+
+@media only screen and (max-width: 900px) {
+		
+	header {
+		background:#D484AB;
+		width:100%;
+		height: 121px;
+		padding: 0px;
+		margin: 0px;
+
+	/*Flexbox*/
+	flex-direction:column;
+	justify-content:space-between;
+	align-items: flex-end;
+
+	}	
+
+	.logo img{
+		width: 130px;
+		margin-top: 5px;
+	}
+
+	.slogan p{
+		display: none;
+	}
+
+	.menu-top{
+		margin-left: -8em;
+		z-index: 1;
+		height: 3px;
+	}
+
+	nav{
+		margin-top: 0px;
+	}
+
+	.menu{
+	flex-direction: column;
+	background-color: #d484ab;
+	padding-top: 0px;
+	margin: 2px;
+	}
+
+    menu .ul{
+		margin-top: 0px;
+	}
+
+	.menu li{
+	flex: none;
+	background-color:rgb(218 160 188);
+	}
+    .menu a:hover{
+	   color: #fff;
+	}
+
+.btn-buttom{
+	display:inline-block;
+	border: 0px;
+	margin-top: -80px;
+}
+
+.btn-buttom img{
+	width: 50px;
+	height: 50px;
+}
+
+li .desaparece{
+	display: none;
+}
+
+.social{
+	display:flex;
+	justify-content: right;
+	margin: 2px;
+}
+
+.social nav ul{
+	display: flex;
+	align-items:flex-end;
+}
+
+.social nav{
+	display: none;
+}
+
+	main{
+		display: column;
+		margin-top: 0px;
+	}
+
+	#slideentrada > .menuslider{
+		display: flex;
+		justify-content: center;
+	}
+	.rodape{
+		display: none;
+	}
+	body {
+	  background-color: lightblue;
+	}
+  }
