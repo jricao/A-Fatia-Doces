@@ -2,7 +2,7 @@
 
 Projeto social apresentado ao Programa Da WoMakersCode, bootcamp Construdelas, patrocinado pela empresa Juntos Somos +
 
-# Nome: A Fatia Doces
+# Nome do projeto: A Fatia Doces
 
 
 # Tecnologias utilizadas 
