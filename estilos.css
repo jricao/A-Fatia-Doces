@@ -6,14 +6,12 @@
 
 .contenedor {
 	background:#FFFFFF;
-	width: 90vw;	
-	display: block;	
-	margin: auto;
+	width: 90vw;
+	margin:auto;
 
 	/* Flexbox */
 	display:flex;
 	flex-flow:row wrap;
-	
 }
 
 body {
@@ -21,11 +19,10 @@ body {
 }
 header {
 	background:#D484AB;
+	width:100%;
 	height:150px;
-	padding:5px;	
-	min-width: 980px;
-	max-width: 1400px;
-	display: block;
+	padding: 5px;
+	margin-bottom: 5%;
 
 	/* Flexbox */
 	display: flex;
@@ -34,42 +31,38 @@ header {
 	flex-direction:row;
 	flex-wrap:wrap;
 }
-.menuprincipal {	
-	width: 100%;
-	display: block;
-	margin: auto;
-    height: 50px;
-	font-size:35px;
+.menu-top{
+	height: 10px;
+	margin-left: 10px;
+}
+.menu {
+	width: 88vw;
+	font-size:33px;
 	list-style-type: none;
 	font-family:'Italianno', cursive;
 	background-color: #E5E5E5;
-	flex-wrap:wrap;
-
-	/*FLEXBOX*/
-
-	display: flex;
-	justify-content:center;
 	z-index: 1;
-	}
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+}
 
-.menuprincipal a {
-	text-align: Center;
-	margin: 50px;
+.menu li {
+	flex: auto;
+}
+
+.menu a {
 	text-decoration: none;
 	color: #67250A;
-	float: center;
-	width: 50%;
-  }
-
-.menuprincipal a:hover {
-	text-align: Center;
-	background-color: #F7BFD8;
-	float: center;
-}
-.social {
-	width: 100%;
+	text-align: center;
+	line-height: 50px;
 	display: block;
-	margin: auto;
+  }
+.menu a:hover {
+	background-color: #F7BFD8;
+}
+
+.social {
 	font-size:15px;
 	text-align: left;
 	list-style-type: none;
@@ -94,8 +87,6 @@ header {
 
 .logo img {
 	width:150px;
-	display: block;
-	margin: auto;
 	vertical-align: top;
 }
 
@@ -105,20 +96,26 @@ header {
 	line-height:50px;
     font-family: 'Italianno', cursive;
 	font-size: 45px;
-	
-  }
-   
+
+	/*FLEXBOX*/
+
+	display: flex;
+	justify-content:center;
+}
+
   footer {
 	background-color: #D484AB;
 	position: Center;
 	bottom: 0;
-	width: 90vw;
+	width: 89.5vw;
 	height: 50px;
 
 	/*FLEXBOX*/
 
 	display: flex;
 	justify-content:center;
+	flex-direction: column;
+	align-items: center;
   }
 .rodape{
 	margin:5px;
@@ -152,8 +149,7 @@ header {
 #main{
 	display: flex;
 	align-items: center;
-	margin-top: 20px;
-	max-width: 1200px;
+	margin-top: 2px;
 	width: 100%;
 	height: 580px;
 }
@@ -162,13 +158,19 @@ header {
 	font-family: sans-serif;
 	margin: auto;
 	background-color: white;
-	max-width: 1200px;
+	max-width: 980px;
 	width: 900%;
 	padding: 0px;
-	height: 500px;
+	height: 580px;
 	box-sizing: border-box;
 
-	}
+	/*FLEXBOX*/
+
+	display: flex;
+	justify-content:center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
 #slideentrada > ul, li {
     padding-top: 0px;
@@ -178,15 +180,15 @@ header {
 
 #slideentrada > ul.slider{
 	position: relative;
-	max-width: 1200px;
-	width: 90vw;
+	max-width: 980px;
+	width: 100%;
 	height: 500px;
   }
   
   #slideentrada > ul.slider h1{
 	position:absolute;
 	background-color: rgba(255, 255, 255, 0.6);
-	width: 980px;
+	width: 89.5vw;
 	padding: 10px;
 	left: 50%;
 	top: 300px;
@@ -224,6 +226,11 @@ header {
   #slideentrada > .menuslider {
 	text-align: center;
 	margin: 5px;
+
+	/*FLEXBOX*/
+
+	display: flex;
+	
   }
   
   #slideentrada > .menuslider li{
@@ -232,7 +239,6 @@ header {
   }
   
   #slideentrada > .menuslider li a{
-	position: center;
 	display: inline-block;
 	color: white;
 	text-decoration: none;
@@ -242,12 +248,10 @@ header {
 	height: 20px;
 	font-size: 10px;
 	border-radius: 100%;
-	text-align: center;
-	left:110px
-	}
+  }
 
   #sobremim{
-	  margin-top: 50px;
+	  margin: 25px;
 	  font-size: 15px;
 	  font-family: 'Actor', sans-serif;
 	  text-align: justify;
@@ -256,29 +260,27 @@ header {
 
   #sobremim h2 {
 	  display: flex;
-	  align-items: center;
-	  margin-top: px;
+      align-items:center;
+	  margin: 10px;
   }
 
- #sobremim h2 img {
+#sobremim h2 img{
 	margin: 5px;
 	width: 50px;
 	height: 45px;
 }
 
-
-#main-cardapio{		
-	max-width: 600px;	
-	align-items: center;	
-	margin-left: 75px;
-	margin-right: 30px;
-	margin-block-end: 30px;	
+#main-cardapio{
+	display: flex;
+	align-content:center;
+	width: 100%;
+	flex-wrap: wrap;
+	flex-direction: column;
 }
 
 #cardapio{
 	display: flex;
 	align-items: center;
-	margin-top: 40px;
 	font-size: 15px;
 	font-family: 'Actor', sans-serif;
 }
@@ -290,21 +292,22 @@ header {
 }
 
 .bolos img {
-  margin: 60px;	
+  margin: 25px;	
   width: 250px;
   height: 250px;
 }
 .bolos p{
 position:absolute;
 background-color: #46363e;
-top: 490px;
-margin-left: 60px;
+top: 454px;
+margin-left: 25px;
 width: 250px;
-line-height: 40px;
-height: 40px;
-text-align:center;
+line-height: 30px;
+height: 30px;
+text-align: center;
 font-family: 'Actor', sans-serif;
 color: #E5E5E5;
+
 }
 
 .ovosdepascoa{
@@ -314,7 +317,7 @@ color: #E5E5E5;
 }
 
 .ovosdepascoa img{
-  margin:60px;
+  margin:25px;
   width: 250px;
   height: 250px;
 }
@@ -322,11 +325,11 @@ color: #E5E5E5;
 .ovosdepascoa p{
 	position:absolute;
 	background-color: #46363e;
-	top: 490px;
+	top: 454px;
 	width: 250px;
-	margin-left: 60px;
-	line-height: 40px;
-	height: 40px;
+	margin-left: 25px;
+	line-height: 30px;
+	height: 30px;
 	text-align: center;
 	font-family: 'Actor', sans-serif;
 	color: #E5E5E5;
@@ -339,7 +342,7 @@ color: #E5E5E5;
 }
 
 .diversos img{
-	margin:60px;
+	margin:25px;
 	width: 250px;
 	height: 250px;
   }
@@ -347,11 +350,11 @@ color: #E5E5E5;
   .diversos p{
 	  position:absolute;
 	  background-color: #46363e;
-	  top: 490px;
+	  top: 454px;
 	  width: 250px;
-	  margin-left: 60px;
-	  line-height: 40px;
-	  height: 40px;
+	  margin-left: 25px;
+	  line-height: 30px;
+	  height: 30px;
 	  text-align: center;
 	  font-family: 'Actor', sans-serif;
 	  color: #E5E5E5;
@@ -360,12 +363,233 @@ color: #E5E5E5;
   #main-contato{
 	display: flex;
 	align-content:center;
-	margin-top: 50px;
-	margin-left: 50px;
+}
+#contato{
+	display: flex;
+	flex-direction: column;
+	width: 89vw;
 }
  #contato h1{
-	margin-left:250px;
-	font-size: 25px;
+	display: flex;
+	font-size: 15px;
 	font-family: 'Actor', sans-serif;
 	text-align: center;
+	flex-direction: column;
 }
+
+.btn-buttom {
+	background-color: #D484AB;
+    width: 50px;
+	height: 50px;
+	margin-top: -62px;
+	display: none;
+	flex-direction: column;
+	align-self: flex-end;
+}
+
+@media only screen and (max-width: 900px) {
+		
+	header {
+		background:#D484AB;
+		width:100%;
+		height: 121px;
+		padding: 0px;
+		margin: 0px;
+
+	/*Flexbox*/
+	flex-direction:column;
+	justify-content:space-between;
+	align-items: flex-end;
+
+	}	
+
+	.logo img{
+		width: 130px;
+		margin-top: 5px;
+	}
+
+	.slogan p{
+		display: none;
+	}
+
+	.menu-top{
+		margin-left: -8em;
+		z-index: 1;
+		height: 3px;
+	}
+
+	nav{
+		margin-top: 0px;
+	}
+
+	.menu{
+	flex-direction: column;
+	background-color: #d484ab;
+	padding-top: 0px;
+	margin: 2px;
+	}
+
+    menu .ul{
+		margin-top: 0px;
+	}
+
+	.menu li{
+	flex: none;
+	background-color:rgb(218 160 188);
+	}
+    .menu a:hover{
+	   color: #fff;
+	}
+
+.btn-buttom{
+	display:inline-block;
+	border: 0px;
+	margin-top: -80px;
+}
+
+.btn-buttom img{
+	width: 50px;
+	height: 50px;
+}
+
+li .desaparece{
+	display: none;
+}
+
+.social{
+	display:flex;
+	justify-content: right;
+	margin: 2px;
+}
+
+.social nav ul{
+	display: flex;
+	align-items:flex-end;
+}
+
+.social nav{
+	display: none;
+}
+
+	#main{
+		display: column;
+		margin-top: 0px;
+	}
+
+	#slideentrada > .menuslider{
+		display: flex;
+		justify-content: center;
+	}
+
+	#sobremim{
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+	}
+
+	#cardapio {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.bolos p {
+		display: flex;
+		position: absolute;
+		background-color: #46363e;
+		top: 366px;
+		margin-left: 25px;
+		width: 250px;
+		line-height: 30px;
+		height: 30px;
+		text-align: center;
+		font-family: 'Actor', sans-serif;
+		color: #E5E5E5;
+		flex-direction: column;
+	}
+
+	.ovosdepascoa p{
+		display: flex;
+		position:absolute;
+		background-color: #46363e;
+		top: 366px;
+		width: 250px;
+		margin-left: 25px;
+		line-height: 30px;
+		height: 30px;
+		text-align: center;
+		font-family: 'Actor', sans-serif;
+		color: #E5E5E5;
+		flex-direction: column;
+	}
+
+	.diversos p{
+		display: flex;
+		position:absolute;
+		background-color: #46363e;
+		top: 670px;
+		width: 250px;
+		margin-left: 25px;
+		line-height: 30px;
+		height: 30px;
+		text-align: center;
+		font-family: 'Actor', sans-serif;
+		color: #E5E5E5;
+		flex-direction: column;
+	}
+
+	.rodape{
+		display: none;
+	}
+	body {
+	  background-color: lightblue;
+	}
+  }
+  @media only screen and (max-width: 666px){
+	.bolos p {
+		position: absolute;
+		background-color: #46363e;
+		top: 365px;
+		margin-left: 25px;
+		width: 250px;
+		line-height: 30px;
+		height: 30px;
+		text-align: center;
+		font-family: 'Actor', sans-serif;
+		color: #E5E5E5;
+		flex-direction: column;
+	}
+
+	.ovosdepascoa p{
+		position:absolute;
+		background-color: #46363e;
+		top: 670px;
+		width: 250px;
+		margin-left: 25px;
+		line-height: 30px;
+		height: 30px;
+		text-align: center;
+		font-family: 'Actor', sans-serif;
+		color: #E5E5E5;
+		flex-direction: column;
+	}
+
+	.diversos p{
+		position:absolute;
+		background-color: #46363e;
+		top: 974px;
+		width: 250px;
+		margin-left: 25px;
+		line-height: 30px;
+		height: 30px;
+		text-align: center;
+		font-family: 'Actor', sans-serif;
+		color: #E5E5E5;
+		flex-direction: column;
+	}
+
+  }
